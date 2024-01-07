@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# 002_create_lobbies_table.rb
-
 # Create a lobbies table with:
 #    - id (primary_key)
 #    - key (String 128)

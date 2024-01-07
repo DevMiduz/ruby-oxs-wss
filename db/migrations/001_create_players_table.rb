@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# 001_create_players_table.rb
-
 # Create a players table with:
 #    - id (primary_key)
 #    - key (String 128)
