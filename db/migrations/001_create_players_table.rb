@@ -12,10 +12,11 @@ Sequel.migration do
     create_table(:players) do
       primary_key :id
       String :key, size: 128, null: false, unique: true
-      String :username, size: 196, null: false, unique: true
+      String :username, size: 196, null: false
       String :platform, size: 128, null: false
       String :status, size: 128, null: false
       Integer :last_activity_at, default: Sequel.function(:to_timestamp, Sequel.function(:now)), null: false
+      add_index [:username, :platform], unique: true
     end
   end
 end
